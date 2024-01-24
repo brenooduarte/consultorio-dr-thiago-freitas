@@ -1,8 +1,32 @@
-# React + Vite
+# Consultório Odontologico - Dr. Thiago Freitas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+É site desenvolvido para destacar o trabalho do cirurgião-dentista Dr. Thiago Freitas, apresentando fotos, vídeos e informações de contato.
 
-Currently, two official plugins are available:
+## Instalação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Execute o seguinte comando para clonar o repositório e entrar na pasta do projeto:
+
+```bash
+$ git clone git@github.com:brenooduarte/consultorio-dr-thiago-freitas.git && cd consultorio-dr-thiago-freitas
+```
+### Instalar Dependências
+
+Execute o seguinte comando para instalar as dependências:
+
+```bash
+$ npm install
+```
+## Excutar Aplicação 
+
+Execute o seguinte comando para executar apliação:
+
+```bash
+$ npm run dev
+```
+## Acessar a aplicação 
+
+- Home: [http://localhost:5173/]()
+
+#Acessar Protótipo
+
+- Figma: [https://www.figma.com/file/uoSC3btHL7jC6gndXhodjn/Consult%C3%B3rio-Dr-Thiago-Freitas?type=design&node-id=23%3A65&mode=design&t=tX7dkJxtFBOgpaFk-1]()
