@@ -1,6 +1,6 @@
 # Consultório Odontologico - Dr. Thiago Freitas
 
-É site desenvolvido para destacar o trabalho do cirurgião-dentista Dr. Thiago Freitas, apresentando fotos, vídeos e informações de contato.
+É um site desenvolvido para destacar o trabalho do cirurgião-dentista Dr. Thiago Freitas, apresentando fotos, vídeos e informações de contato.
 
 ## Instalação
 
