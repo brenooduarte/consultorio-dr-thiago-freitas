@@ -3,8 +3,6 @@ import thiago from '../../assets/thiago.png'
 import tooth from '../../assets/tooth.png'
 import telephone from '../../assets/telephone.svg'
 
-import thiagoAndPatient from '../../assets/thiago-and-patient.png'
-
 const Home = () => {
   return (
     <>
