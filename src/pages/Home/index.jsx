@@ -3,8 +3,6 @@ import thiago from '../../assets/thiago.png'
 import tooth from '../../assets/tooth.png'
 import telephone from '../../assets/telephone.svg'
 
-import thiagoAndPatient from '../../assets/thiago-and-patient.png'
-
 const Home = () => {
   return (
     <>
@@ -17,6 +15,7 @@ const Home = () => {
           <a href="">Perfil</a>
           <a href="">Tratamentos</a>
           <a href="">Atendimento</a>
+          <a href="">Espaço</a>
         </div>
 
         <div className='info-container'>
