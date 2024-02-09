@@ -15,6 +15,7 @@ const Home = () => {
           <a href="">Perfil</a>
           <a href="">Tratamentos</a>
           <a href="">Atendimento</a>
+          <a href="">Espaço</a>
         </div>
 
         <div className='info-container'>
