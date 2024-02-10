@@ -1,180 +1,193 @@
-$primary-color: #1067B7;
-$secondary-color: #F4F4F4;
-$text-color: #1D1D1D;
+$primary-color: #1067b7;
+$secondary-color: #f4f4f4;
+$text-color: #1d1d1d;
 
 // INITIAL SECTION
 
-html, body {
-    scroll-behavior: smooth;
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }
 
-.initial-section {
-    display: flex;
-    height: 100vh;
+section {
+  display: flex;
+  height: 100vh;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    position: absolute;
-    z-index: 3;
-    margin-top: 30px;
-    margin-left: 170px; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  margin-top: 30px;
+  margin-left: 170px;
 }
 
 .header a {
-    margin-right: 35px;
-    position: relative;
-    text-decoration: none;
-    color: $text-color; 
-    font-size: 16px; 
+  margin-right: 35px;
+  position: relative;
+  text-decoration: none;
+  color: $text-color;
+  font-size: 16px;
 
-    &:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: $text-color; 
-        transform-origin: bottom right;
-        transform: scaleX(0); 
-        transition: transform 0.3s ease;
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $text-color;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
 
-    &:hover:before {
-        transform-origin: bottom left;
-        transform: scaleX(1); 
-    }
+  &:hover:before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
 }
 
 .telephone-image {
-    width: 27px;
-    height: 27px;
+  width: 27px;
+  height: 27px;
 }
 
 a.telephone-number {
-    margin-right: 65px;
+  margin-right: 65px;
 }
 
 .telephone-number {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 .info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    justify-content: center;
-    padding-left: 170px;
-    
-    h1 {
-        color: $text-color;
-        font-size: 40.5px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        letter-spacing: -1.35px;
-        margin: 10px 0 10px 0;
-    }
-    
-    p {
-        color: $text-color;
-        font-family: Montserrat;
-        font-size: 22.5px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 110%;
-        letter-spacing: -0.75px;
-        margin: 10px 0 10px 0;
-    }
-    
-    .button {
-        color: $secondary-color;
-        font-size: 20.2px;
-        width: 215px;
-        height: 62px;
-        border-radius: 21px;
-        background: $primary-color;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        border: none;
-        margin: 10px 0 10px 0;
-        transition: background 0.4s ease;
-        transition: transform 0.4s ease;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 170px;
 
-    .button:hover {
-        background: #105697;
-        transform: scale(1.03);
-    }
+  h1 {
+    color: $text-color;
+    font-size: 40.5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.35px;
+    margin: 10px 0 10px 0;
+  }
+
+  p {
+    color: $text-color;
+    font-family: Montserrat;
+    font-size: 22.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -0.75px;
+    margin: 10px 0 10px 0;
+  }
+
+  .button {
+    color: $secondary-color;
+    font-size: 20.2px;
+    width: 215px;
+    height: 62px;
+    border-radius: 21px;
+    background: $primary-color;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    margin: 10px 0 10px 0;
+    transition: background 0.4s ease;
+    transition: transform 0.4s ease;
+  }
+
+  .button:hover {
+    background: #105697;
+    transform: scale(1.03);
+  }
 }
 
 .rectangle {
-    background-color: $primary-color;
-    width: 500px;
-    height: 100vh;
-    margin-left: auto; 
-    position: relative;
-    z-index: 1;
+  background-color: $primary-color;
+  width: 500px;
+  height: 100vh;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .tooth {
-    background: none;
-    width: 425px;
-    height: 580px;
-    position: absolute;
-    left: 851px; 
-    z-index: 2;
+  background: none;
+  width: 425px;
+  height: 580px;
+  position: absolute;
+  left: 851px;
+  z-index: 2;
 }
 
 .thiago-image {
-    background: none;
-    width: 455.05px;
-    height: 566.2px;
-    position: absolute;
-    top: 54px; 
-    left: 590px; 
-    z-index: 3;
+  background: none;
+  width: 455.05px;
+  height: 566.2px;
+  position: absolute;
+  top: 54px;
+  left: 590px;
+  z-index: 3;
 }
 
 // PROFILE SECTION
 
-.profile-section {
-    display: flex;
-    height: 100vh;
-}
-
 .half {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-right: 170px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 170px;
 
-    p {
-        text-align: justify;
-        font-size: 17px;
-        padding-bottom: 40px;
-    }
+  p {
+    text-align: justify;
+    font-size: 17px;
+    padding-bottom: 40px;
+  }
 }
 
 .thiago-patient-image {
-    width: 372px;
-    height: 497.6px;
-    padding-left: 170px;
-    
+  width: 372px;
+  height: 497.6px;
+  padding-left: 170px;
 }
 
 .profile-title {
-    color: $primary-color;
-    font-style: bold;
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 80px;
+  color: $primary-color;
+  font-style: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
+// TREATMENTS SECTION
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.treatments-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: $primary-color;
+  font-style: bold;
+  font-size: 25px;
+  margin-bottom: 80px;
+}

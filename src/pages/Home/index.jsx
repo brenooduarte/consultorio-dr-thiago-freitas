@@ -1,71 +1,77 @@
-import './styles.scss'
-import thiago from '../../assets/thiago.png'
-import tooth from '../../assets/tooth.png'
-import telephone from '../../assets/telephone.svg'
-import thiagoAndPatient from '../../assets/thiago-and-patient.png'
+import "./styles.scss";
+import thiago from "../../assets/thiago.png";
+import tooth from "../../assets/tooth.png";
+import telephone from "../../assets/telephone.svg";
+import thiagoAndPatient from "../../assets/thiago-and-patient.png";
 
 const Home = () => {
   return (
     <>
-
-      <section className='initial-section'>
-        
-        <div className='header'>
-          <img className='telephone-image' src={telephone} alt="Telephone" />
-          <a className='telephone-number' href="">(83) 9 8179-4041</a>
+      <section className="initial-section">
+        <div className="header">
+          <img className="telephone-image" src={telephone} alt="Telephone" />
+          <a className="telephone-number" href="">
+            (83) 9 8179-4041
+          </a>
           <a href="#profile">Perfil</a>
-          <a href="">Tratamentos</a>
+          <a href="#treatments">Tratamentos</a>
           <a href="">Atendimento</a>
           <a href="">Espaço</a>
         </div>
 
-        <div className='info-container'>
+        <div className="info-container">
           <h1>Dr. Thiago Freitas</h1>
-          <p>Agende sua consulta para cuidados <br />
+          <p>
+            Agende sua consulta para cuidados <br />
             personalizados e resultados excepcionais. <br />
-            Sorria com confiança!</p>
-            <button className='button'>Agendar consulta</button>
+            Sorria com confiança!
+          </p>
+          <button className="button">Agendar consulta</button>
         </div>
-        
 
-        <img className='thiago-image' src={thiago} alt="Thiago" />
-        <img className='tooth' src={tooth} alt="Tooth" />
-        <div className='rectangle'></div>        
-
+        <img className="thiago-image" src={thiago} alt="Thiago" />
+        <img className="tooth" src={tooth} alt="Tooth" />
+        <div className="rectangle"></div>
       </section>
 
-      <section id='profile' className='profile-section'>
-        <div className='half'>
-
-          <img className='thiago-patient-image' src={thiagoAndPatient} alt="Thiago and patient" />
-        
+      <section id="profile" className="profile-section">
+        <div className="half">
+          <img
+            className="thiago-patient-image"
+            src={thiagoAndPatient}
+            alt="Thiago and patient"
+          />
         </div>
-        
-        <div className='half'>
 
-          <h2 className='profile-title'>Perfil Profissional</h2>
+        <div className="half">
+          <h2 className="profile-title">Perfil Profissional</h2>
 
-          <h3>Dr. Thiago Freitas</h3> 
+          <h3>Dr. Thiago Freitas</h3>
           <p>
-            <br />Como dentista apaixonado pela saúde bucal e pelo sorriso de meus pacientes, 
-            dedico minha carreira a proporcionar cuidados odontológicos excepcionais. Com
-            uma sólida formação acadêmica e anos de experiência clínica, busco 
-            constantemente atualizações para oferecer tratamentos de última geração e promover 
-            sorrisos saudáveis e confiantes.
+            <br />
+            Como dentista apaixonado pela saúde bucal e pelo sorriso de meus
+            pacientes, dedico minha carreira a proporcionar cuidados
+            odontológicos excepcionais. Com uma sólida formação acadêmica e anos
+            de experiência clínica, busco constantemente atualizações para
+            oferecer tratamentos de última geração e promover sorrisos saudáveis
+            e confiantes.
           </p>
 
           <h3>Educação e Formação:</h3>
           <p>
-            <br /><li>Graduação em Odontologia ( FIP Campina Grande )</li>
+            <br />
+            <li>Graduação em Odontologia ( FIP Campina Grande )</li>
           </p>
-
         </div>
-
       </section>
 
-    </>
-  )
-}
+      <section id="treatments" className="treatments-section">
+        <div className="line" />
 
-export default Home
- 
+        <h2 className="treatments-title">Tratamentos</h2>
+      </section>
+    </>
+  );
+};
+
+export default Home;
