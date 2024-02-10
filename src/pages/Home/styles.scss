@@ -2,6 +2,12 @@ $primary-color: #1067B7;
 $secondary-color: #F4F4F4;
 $text-color: #1D1D1D;
 
+// INITIAL SECTION
+
+html, body {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $secondary-color;
 }
@@ -122,7 +128,7 @@ a.telephone-number {
     width: 425px;
     height: 580px;
     position: absolute;
-    left: 865px; 
+    left: 851px; 
     z-index: 2;
 }
 
@@ -135,3 +141,40 @@ a.telephone-number {
     left: 590px; 
     z-index: 3;
 }
+
+// PROFILE SECTION
+
+.profile-section {
+    display: flex;
+    height: 100vh;
+}
+
+.half {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 170px;
+
+    p {
+        text-align: justify;
+        font-size: 17px;
+        padding-bottom: 40px;
+    }
+}
+
+.thiago-patient-image {
+    width: 372px;
+    height: 497.6px;
+    padding-left: 170px;
+    
+}
+
+.profile-title {
+    color: $primary-color;
+    font-style: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
