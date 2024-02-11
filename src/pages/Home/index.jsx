@@ -52,16 +52,25 @@ const Home = () => {
             <br />
             Como dentista apaixonado pela saúde bucal e pelo sorriso de meus
             pacientes, dedico minha carreira a proporcionar cuidados
-            odontológicos excepcionais. Com uma sólida formação acadêmica e anos
-            de experiência clínica, busco constantemente atualizações para
-            oferecer tratamentos de última geração e promover sorrisos saudáveis
-            e confiantes.
+            odontológicos excepcionais. Com uma sólida formação acadêmica, busco
+            constantemente atualizações para oferecer tratamentos de última
+            geração e promover sorrisos saudáveis e confiantes.
           </p>
 
           <h3>Educação e Formação:</h3>
           <p>
             <br />
             <li>Graduação em Odontologia ( FIP Campina Grande )</li>
+          </p>
+          <p>
+            <br />
+            <li>
+              Aperfeiçoamento em Cirugia Oral Menor ( FIP Campina Grande )
+            </li>
+          </p>
+          <p>
+            <br />
+            <li>Pós graduando em Ortodontia ( Funorte Campina grande )</li>
           </p>
         </div>
       </section>

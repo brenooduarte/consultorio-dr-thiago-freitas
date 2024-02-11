@@ -1,6 +1,6 @@
 $primary-color: #1067b7;
 $secondary-color: #f4f4f4;
-$text-color: #1d1d1d;
+$text-color: #072441;
 
 // INITIAL SECTION
 
@@ -147,6 +147,7 @@ a.telephone-number {
 
 .half {
   width: 50%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -154,8 +155,11 @@ a.telephone-number {
 
   p {
     text-align: justify;
-    font-size: 17px;
-    padding-bottom: 40px;
+    font-size: 16px;
+  }
+
+  h3 {
+    margin-top: 20px;
   }
 }
 
@@ -170,7 +174,7 @@ a.telephone-number {
   font-style: bold;
   font-size: 25px;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 // TREATMENTS SECTION
@@ -198,7 +202,7 @@ a.telephone-number {
 
 .treatments-subtitle {
   text-align: center;
-  color: $primary-color;
+  color: #072441;
   font-style: normal;
   font-size: 20px;
   margin-bottom: 40px;
