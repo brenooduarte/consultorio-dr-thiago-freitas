@@ -175,6 +175,11 @@ a.telephone-number {
 
 // TREATMENTS SECTION
 
+.treatments-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .line {
   width: 100%;
   height: 2px;
@@ -183,11 +188,18 @@ a.telephone-number {
 }
 
 .treatments-title {
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: $primary-color;
   font-style: bold;
   font-size: 25px;
-  margin-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.treatments-subtitle {
+  text-align: center;
+  color: $primary-color;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 40px;
 }

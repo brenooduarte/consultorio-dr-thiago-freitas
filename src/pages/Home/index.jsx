@@ -3,6 +3,7 @@ import thiago from "../../assets/thiago.png";
 import tooth from "../../assets/tooth.png";
 import telephone from "../../assets/telephone.svg";
 import thiagoAndPatient from "../../assets/thiago-and-patient.png";
+import CardCarousel from "../../components/CardCarousel/index.jsx";
 
 const Home = () => {
   return (
@@ -69,6 +70,9 @@ const Home = () => {
         <div className="line" />
 
         <h2 className="treatments-title">Tratamentos</h2>
+        <h3 className="treatments-subtitle">Realizados em nosso Consultório</h3>
+
+        <CardCarousel />
       </section>
     </>
   );

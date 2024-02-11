@@ -1,0 +1,82 @@
+$primary-color: #1067b7;
+$secondary-color: #f4f4f4;
+$text-color: #1d1d1d;
+
+.card-carousel {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  width: 47%;
+  margin: auto;
+}
+
+.top-cards,
+.bottom-cards {
+  width: 100%;
+  display: flex;
+}
+
+.cards-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  justify-content: center;
+
+  width: 187px;
+  height: 187px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $primary-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+
+  transition: background 0.4s ease, transform 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.container-card-carousel {
+  display: flex;
+}
+
+.prev-button,
+.next-button {
+  margin-top: 160px;
+  display: flex;
+  justify-items: center;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #ffffff;
+}
+
+.prev-button {
+  left: 230px;
+}
+
+.next-button {
+  right: 230px;
+}
