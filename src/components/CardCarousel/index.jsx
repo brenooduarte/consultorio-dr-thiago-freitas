@@ -15,7 +15,7 @@ const CardCarousel = () => {
     "Plástica de Gengivas (Gengivoplastia)",
     "Ortodontia",
     "Facetas",
-    "Harmonização Orofacial",
+    "Implantodontia",
   ];
 
   const bottomCards = [
@@ -24,7 +24,6 @@ const CardCarousel = () => {
     "Tratamento de Canal",
     "Próteses",
     "Tratamento de Gengiva (Periodontia)",
-    "Implantodontia",
   ];
 
   const canNavigateNext = (currentIndex, cards) =>
@@ -78,23 +77,31 @@ const CardCarousel = () => {
             ))}
         </div>
       </div>
+
       <span
         className="prev-button"
         onClick={prevSlide}
-        disabled={
-          !canNavigatePrev(currentIndexTopCards) &&
-          !canNavigatePrev(currentIndexBottomCards)
-        }
+        style={{
+          display:
+            canNavigatePrev(currentIndexTopCards) ||
+            canNavigatePrev(currentIndexBottomCards)
+              ? ""
+              : "none",
+        }}
       >
         <img src={arrowLeft} alt="Arrow left" />
       </span>
+
       <span
         className="next-button"
         onClick={nextSlide}
-        disabled={
-          !canNavigateNext(currentIndexTopCards, topCards) &&
-          !canNavigateNext(currentIndexBottomCards, bottomCards)
-        }
+        style={{
+          display:
+            canNavigateNext(currentIndexTopCards, topCards) ||
+            canNavigateNext(currentIndexBottomCards, bottomCards)
+              ? ""
+              : "none",
+        }}
       >
         <img src={arrowRight} alt="Arrow right" />
       </span>
