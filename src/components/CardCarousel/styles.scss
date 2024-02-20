@@ -1,6 +1,6 @@
 $primary-color: #1067b7;
 $secondary-color: #f4f4f4;
-$text-color: #1d1d1d;
+$text-color: #072441;
 
 .card-carousel {
   display: flex;
@@ -22,12 +22,14 @@ $text-color: #1d1d1d;
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%;
+  justify-content: center;
 }
 
 .card {
   display: flex;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 
   font-size: 19px;
   font-style: normal;
@@ -35,7 +37,7 @@ $text-color: #1d1d1d;
   justify-content: center;
 
   width: 187px;
-  height: 187px;
+  height: 197px;
   background-color: #ffffff;
   border-radius: 25px;
   border-width: 2px;
@@ -47,8 +49,44 @@ $text-color: #1d1d1d;
   transition: background 0.4s ease, transform 0.4s ease;
 }
 
-.card:hover {
+.card-icon {
+  position: absolute;
+  margin-bottom: 110px;
+  width: 56px;
+  height: 56px;
+}
+
+.card.hovered {
   transform: scale(1.03);
+  background-color: $primary-color;
+  border-color: #0d3c6b;
+
+  .card-icon {
+    display: none;
+  }
+}
+
+.card.hovered .card-text {
+  color: white;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: start;
+  padding: 0 15px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title-hovered {
+  color: white;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  justify-content: center;
 }
 
 .container-card-carousel {
