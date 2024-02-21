@@ -5,10 +5,10 @@ const ServiceSection = () => {
     <section id="service" className="service-section">
       <h2 className="title-section">Atendimento</h2>
 
-      <div className="card-container-service">
+      <div className="service-container">
         <div>
           <h2>Aberto</h2>
-          <div className="open-card">
+          <div className="service-card open-card">
             <p>
               <strong>Segunda</strong> à <strong>Sexta</strong> das
               <span> 8h às 11h30</span> e das <span>14h às 17h30</span> <br />
@@ -21,7 +21,7 @@ const ServiceSection = () => {
 
         <div>
           <h2>Localização</h2>
-          <div className="location-card">
+          <div className="service-card location-card">
             <p>
               Rua João Firmino, 472. <br />
               Centro - <strong>Sumé-PB</strong>
