@@ -1,0 +1,35 @@
+$primary-color: #1067b7;
+$secondary-color: #f4f4f4;
+$text-color: #072441;
+
+.half {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 170px;
+
+  p {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  h3 {
+    margin-top: 20px;
+  }
+}
+
+.thiago-patient-image {
+  width: 372px;
+  height: 497.6px;
+  padding-left: 170px;
+}
+
+.profile-title {
+  color: $primary-color;
+  font-style: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
