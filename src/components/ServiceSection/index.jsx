@@ -1,4 +1,5 @@
 import "./styles.scss";
+import Button from "../Button/index.jsx";
 
 const ServiceSection = () => {
   return (
@@ -29,6 +30,7 @@ const ServiceSection = () => {
           </div>
         </div>
       </div>
+      <Button text="Agendar consulta" className={"button"} />
     </section>
   );
 };

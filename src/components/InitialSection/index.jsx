@@ -2,6 +2,7 @@ import "./styles.scss";
 import thiago from "../../assets/thiago.png";
 import tooth from "../../assets/tooth.png";
 import telephone from "../../assets/telephone.svg";
+import Button from "../Button/index.jsx";
 
 const InitialSection = () => {
   return (
@@ -24,7 +25,8 @@ const InitialSection = () => {
           personalizados e resultados excepcionais. <br />
           Sorria com confiança!
         </p>
-        <button className="button">Agendar consulta</button>
+
+        <Button text="Agendar consulta" className={"button"} />
       </div>
 
       <img className="thiago-image" src={thiago} alt="Thiago" />
