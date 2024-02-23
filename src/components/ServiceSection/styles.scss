@@ -4,18 +4,17 @@ $text-color: #072441;
 
 .service-section {
   flex-direction: column;
+  align-items: center;
+  gap: 10%;
 }
 
-.card-container-service {
+.service-container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
   h2 {
     margin-left: 40px;
-  }
-
-  p {
-    line-height: 1.5;
-    margin-left: 30px;
   }
 
   span {
@@ -25,31 +24,7 @@ $text-color: #072441;
   }
 }
 
-.open-card {
-  display: flex;
-  align-items: center;
-  text-align: start;
-  flex-direction: column;
-
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 500;
-  justify-content: center;
-
-  width: 550px;
-  height: 150px;
-  background-color: #ffffff;
-  border-radius: 25px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: $primary-color;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin: 10px;
-
-  transition: background 0.4s ease, transform 0.4s ease;
-}
-
-.location-card {
+.service-card {
   display: flex;
   align-items: start;
   text-align: start;
@@ -71,4 +46,19 @@ $text-color: #072441;
   margin: 10px;
 
   transition: background 0.4s ease, transform 0.4s ease;
+
+  p {
+    margin-left: 30px;
+    line-height: 1.5;
+  }
+}
+
+.open-card {
+  width: 560px;
+  height: 150px;
+}
+
+.location-card {
+  width: 280px;
+  height: 150px;
 }
