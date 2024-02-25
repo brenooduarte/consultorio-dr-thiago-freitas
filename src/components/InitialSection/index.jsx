@@ -14,8 +14,8 @@ const InitialSection = () => {
         </a>
         <a href="#profile">Perfil</a>
         <a href="#treatments">Tratamentos</a>
-        <a href="#service">Atendimento</a>
         <a href="#space">Espaço</a>
+        <a href="#service">Atendimento</a>
       </div>
 
       <div className="info-container">
