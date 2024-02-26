@@ -2,6 +2,10 @@ $primary-color: #1067b7;
 $secondary-color: #f4f4f4;
 $text-color: #072441;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   scroll-behavior: smooth;

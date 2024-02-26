@@ -1,8 +1,8 @@
 import "./styles.scss";
-import thiago from "../../assets/thiago.png";
-import tooth from "../../assets/tooth.png";
-import telephone from "../../assets/telephone.svg";
-import Button from "../Button/index.jsx";
+import thiago from "../../../assets/thiago.png";
+import tooth from "../../../assets/tooth.png";
+import telephone from "../../../assets/telephone.svg";
+import Button from "../../Button/index.jsx";
 
 const InitialSection = () => {
   return (

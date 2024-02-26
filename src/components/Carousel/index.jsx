@@ -3,7 +3,7 @@ import { useState, Children } from "react";
 import arrowLeft from "../../assets/arrow-left.svg";
 import arrowRight from "../../assets/arrow-right.svg";
 
-const MAX_VISIBILITY = 3;
+const MAX_VISIBILITY = 2;
 
 const Carousel = ({ children }) => {
   const [active, setActive] = useState(2);
@@ -16,9 +16,10 @@ const Carousel = ({ children }) => {
           <img className="arrow" src={arrowLeft} alt="Arrow left" />
         </button>
       )}
+
       {Children.map(children, (child, i) => (
         <div
-          className="card-video-container"
+          className="carousel-container"
           style={{
             "--active": i === active ? 1 : 0,
             "--offset": (active - i) / 3,
@@ -32,6 +33,7 @@ const Carousel = ({ children }) => {
           {child}
         </div>
       ))}
+
       {active < count - 1 && (
         <button className="nav right" onClick={() => setActive((i) => i + 1)}>
           <img className="arrow" src={arrowRight} alt="Arrow right" />

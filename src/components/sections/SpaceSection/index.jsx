@@ -1,6 +1,6 @@
 import "./styles.scss";
 import { useEffect } from "react";
-import Carousel from "../Carousel";
+import Carousel from "../../Carousel";
 
 const CARDS = 4;
 
@@ -14,7 +14,6 @@ const SpaceSection = () => {
       const secondElement = document.getElementById(
         "change-point-for-white-background"
       );
-      const titleElements = document.querySelectorAll(".title-section");
       const firstElementOffsetTop = firstElement.offsetTop;
       const secondElementOffsetTop = secondElement.offsetTop;
 
@@ -23,14 +22,8 @@ const SpaceSection = () => {
         window.scrollY < secondElementOffsetTop
       ) {
         body.style.backgroundColor = "#a9d5ff";
-        titleElements.forEach((titleElement) => {
-          titleElement.style.color = "#ffffff";
-        });
       } else {
         body.style.backgroundColor = "#f4f4f4";
-        titleElements.forEach((titleElement) => {
-          titleElement.style.color = "";
-        });
       }
     };
 
@@ -41,18 +34,26 @@ const SpaceSection = () => {
     };
   }, []);
 
+  const videos = [
+    "https://www.youtube.com/embed/PPzmK8gBtCc",
+    "https://www.youtube.com/embed/CfddRN5gv-I",
+    "https://www.youtube.com/embed/gBVYsGBGCIo",
+    "https://www.youtube.com/embed/MCyRRPsy55Y",
+  ];
+
   return (
     <section id="space" className="space-section">
       <h2 id="change-point-for-white-background" className="title-section">
         Espaço
       </h2>
+      <h3 className="treatments-subtitle">Conheça nosso Consultório</h3>
       <Carousel>
-        {Array.from({ length: CARDS }).map((_, i) => (
+        {videos.map((link, i) => (
           <iframe
             key={i}
             width="220.5"
             height="392"
-            src="https://www.youtube.com/embed/ZNkZ8FI1JoY"
+            src={link}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
