@@ -1,5 +1,5 @@
 import "./styles.scss";
-import Button from "../Button/index.jsx";
+import Button from "../../Button/index.jsx";
 
 const ServiceSection = () => {
   return (

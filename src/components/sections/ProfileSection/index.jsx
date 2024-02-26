@@ -1,5 +1,5 @@
 import "./styles.scss";
-import thiagoAndPatient from "../../assets/thiago-and-patient.png";
+import thiagoAndPatient from "../../../assets/thiago-and-patient.png";
 
 const ProfileSection = () => {
   return (

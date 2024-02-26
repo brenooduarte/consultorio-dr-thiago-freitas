@@ -1,5 +1,5 @@
 import "./styles.scss";
-import CardCarousel from "../CardCarousel/index.jsx";
+import CardCarousel from "../../CardCarousel/index.jsx";
 
 const TreatmentsSection = () => {
   return (

@@ -1,8 +1,8 @@
 import "./styles.scss";
-import thiago from "../../assets/thiago.png";
-import tooth from "../../assets/tooth.png";
-import telephone from "../../assets/telephone.svg";
-import Button from "../Button/index.jsx";
+import thiago from "../../../assets/thiago.png";
+import tooth from "../../../assets/tooth.png";
+import telephone from "../../../assets/telephone.svg";
+import Button from "../../Button/index.jsx";
 
 const InitialSection = () => {
   return (
@@ -14,8 +14,8 @@ const InitialSection = () => {
         </a>
         <a href="#profile">Perfil</a>
         <a href="#treatments">Tratamentos</a>
+        <a href="#space">Espaço</a>
         <a href="#service">Atendimento</a>
-        <a href="">Espaço</a>
       </div>
 
       <div className="info-container">
