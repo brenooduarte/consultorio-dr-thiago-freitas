@@ -4,6 +4,14 @@ $text-color: #072441;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  /* 1rem é igual a 10px */
+  font-size: 62.5%;
 }
 
 html,
@@ -26,9 +34,13 @@ section {
   text-align: center;
   color: $primary-color;
   font-style: bold;
-  font-size: 25px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 
   transition: color 0.5s ease;
+}
+
+h2 {
+  font-size: 2rem;
 }

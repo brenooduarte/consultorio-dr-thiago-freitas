@@ -8,16 +8,16 @@ $text-color: #072441;
   align-items: center;
   position: absolute;
   z-index: 3;
-  margin-top: 30px;
-  margin-left: 170px;
+  margin-top: 3rem;
+  margin-left: 17rem;
 }
 
 .header a {
-  margin-right: 35px;
+  margin-right: 3.5rem;
   position: relative;
   text-decoration: none;
   color: $text-color;
-  font-size: 16px;
+  font-size: 1.6rem;
 
   &:before {
     content: "";
@@ -39,16 +39,16 @@ $text-color: #072441;
 }
 
 .telephone-image {
-  width: 27px;
-  height: 27px;
+  width: 2.7rem;
+  height: 2.7rem;
 }
 
 a.telephone-number {
-  margin-right: 65px;
+  margin-right: 6.5rem;
 }
 
 .telephone-number {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .info-container {
@@ -56,11 +56,11 @@ a.telephone-number {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-left: 170px;
+  padding-left: 17rem;
 
   h1 {
     color: $text-color;
-    font-size: 40.5px;
+    font-size: 4.05rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -71,7 +71,7 @@ a.telephone-number {
   p {
     color: $text-color;
     font-family: Montserrat;
-    font-size: 22.5px;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
@@ -82,7 +82,7 @@ a.telephone-number {
 
 .rectangle {
   background-color: $primary-color;
-  width: 500px;
+  width: 50rem;
   height: 100vh;
   margin-left: auto;
   position: relative;
@@ -91,19 +91,19 @@ a.telephone-number {
 
 .tooth {
   background: none;
-  width: 425px;
-  height: 580px;
+  width: 42.5rem;
+  height: 58rem;
   position: absolute;
-  left: 851px;
+  left: 85.1rem;
   z-index: 2;
 }
 
 .thiago-image {
   background: none;
-  width: 455.05px;
-  height: 566.2px;
+  width: 45.505rem;
+  height: 56.62rem;
   position: absolute;
-  top: 54px;
-  left: 590px;
+  top: 5.4rem;
+  left: 59rem;
   z-index: 3;
 }
