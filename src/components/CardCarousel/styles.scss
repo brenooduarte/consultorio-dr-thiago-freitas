@@ -57,7 +57,7 @@ $text-color: #072441;
 }
 
 .card.hovered {
-  transform: scale(1.03);
+  transform: scale(1.04);
   background-color: $primary-color;
   border-color: #0d3c6b;
 
@@ -68,7 +68,7 @@ $text-color: #072441;
 
 .card.hovered .card-text {
   color: white;
-  font-size: 15px;
+  font-size: 13.5px;
   font-style: normal;
   font-weight: 400;
   text-align: start;
@@ -78,7 +78,7 @@ $text-color: #072441;
 .card-text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .title-hovered {

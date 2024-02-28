@@ -47,9 +47,18 @@ const CardCarousel = () => {
     "Promove a cor ideal dos seus dentes, garantindo um sorriso adequado e bonito.",
     "Gengivoplastia busca modificar o formato da gengiva para torná-la mais simétrica e preservar a estética dental.",
     "Ortodontia é uma área que se destina ao tratamento e prevenção de desordens dentais e esqueleticas.",
+    "Procedimento estético que cuida e suaviza a anatomia natural dos seus dentes, atingindo a cor ideal para cada tipo de dente.",
+    "Procedimento cirúrgico,  onde colocamos um dente feito de algum material compatível com o osso do paciente (titânio, por exemplo) e porcelana.",
   ];
 
-  const bottomCardDescriptions = [];
+  const bottomCardDescriptions = [
+    "Proporciona a retirada do tártaro, sujeira resistente que, se acumulada, pode levar a problemas como gengivite e perda dentária.",
+    "Procedimento no qual, retiramos a cárie e preenchemos com um material adequado para que o dente consiga se recuperar da agressão.",
+    "Consiste na remoção das bactérias do nervo dental e aplicação de medicação para evitar sua proliferação.",
+    "Pacientes com ausência de dentes ou perda parcial podem se beneficiar da confecção de próteses que melhoram a mastigação e a fonética.",
+    "São procedimentos de limpeza e orientação que visam promover a saúde das suas gengivas.",
+    "Apliacação de flúor, selantes, orientações de higiene que facilitam a saúde oral.",
+  ];
 
   const topCardIcon = [
     toothExtraction,
