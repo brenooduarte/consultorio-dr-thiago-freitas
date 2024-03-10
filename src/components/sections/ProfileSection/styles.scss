@@ -1,6 +1,4 @@
-$primary-color: #1067b7;
-$secondary-color: #f4f4f4;
-$text-color: #072441;
+@import "/src/global.scss";
 
 .half {
   width: 50%;
@@ -29,7 +27,7 @@ $text-color: #072441;
 }
 
 .profile-title {
-  color: $primary-color;
+  color: $color-blue;
   font-style: bold;
   font-size: 2.5rem;
   text-align: center;

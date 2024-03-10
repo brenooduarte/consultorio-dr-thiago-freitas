@@ -1,0 +1,48 @@
+@import "/src/global.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #072441;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  /* 1rem é igual a 10px */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #f4f4f4;
+  transition: background-color 1s ease;
+}
+
+body {
+  width: 100%;
+  background-color: $color-white;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+}
+
+.title-section {
+  text-align: center;
+  color: $color-blue;
+  font-style: bold;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+
+  transition: color 0.5s ease;
+}
+
+h2 {
+  font-size: 2rem;
+}

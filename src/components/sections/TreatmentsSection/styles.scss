@@ -1,6 +1,4 @@
-$primary-color: #1067b7;
-$secondary-color: #f4f4f4;
-$text-color: #072441;
+@import "/src/global.scss";
 
 .treatments-section {
   flex-direction: column;
