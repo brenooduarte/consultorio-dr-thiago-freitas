@@ -4,7 +4,7 @@ import thiagoAndPatient from "../../../assets/thiago-and-patient.jpeg";
 const ProfileSection = () => {
   return (
     <section id="profile" className="profile-section">
-      <div className="half">
+      <div id="image-container" className="half">
         <img
           className="thiago-patient-image"
           src={thiagoAndPatient}
@@ -12,12 +12,11 @@ const ProfileSection = () => {
         />
       </div>
 
-      <div className="half">
+      <div id="info-container" className="half">
         <h2 className="profile-title">Perfil Profissional</h2>
 
         <h3>Dr. Thiago Freitas</h3>
         <p>
-          <br />
           Como dentista apaixonado pela saúde bucal e pelo sorriso de meus
           pacientes, dedico minha carreira a proporcionar cuidados odontológicos
           excepcionais. Com uma sólida formação acadêmica, busco constantemente
@@ -27,15 +26,12 @@ const ProfileSection = () => {
 
         <h3>Educação e Formação:</h3>
         <p>
-          <br />
           <li>Graduação em Odontologia ( FIP Campina Grande )</li>
         </p>
         <p>
-          <br />
           <li>Aperfeiçoamento em Cirugia Oral Menor ( FIP Campina Grande )</li>
         </p>
         <p>
-          <br />
           <li>Pós graduando em Ortodontia ( Funorte Campina grande )</li>
         </p>
       </div>

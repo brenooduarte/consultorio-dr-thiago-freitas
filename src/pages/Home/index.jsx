@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <InitialSection />
 
-      {/* <ProfileSection /> */}
+      <ProfileSection />
 
       {/*<TreatmentsSection />
 
