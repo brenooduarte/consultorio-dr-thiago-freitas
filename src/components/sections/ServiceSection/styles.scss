@@ -45,7 +45,8 @@ $text-color: #072441;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 10px;
 
-  transition: background 0.4s ease, transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: background 0.4s ease;
 
   p {
     margin-left: 3rem;
