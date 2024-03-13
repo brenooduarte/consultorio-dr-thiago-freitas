@@ -2,6 +2,7 @@
 
 .treatments-section {
   flex-direction: column;
+  height: 70rem;
 }
 
 .treatments-subtitle {
@@ -9,5 +10,5 @@
   color: $color-text;
   font-style: normal;
   font-size: 2rem;
-  margin-bottom: 4rem;
+  padding: 0 2rem 4rem 2rem;
 }

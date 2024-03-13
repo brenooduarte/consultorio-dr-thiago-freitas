@@ -22,7 +22,7 @@ const CardCarousel = () => {
   const [hoveredIndexTopCards, setHoveredIndexTopCards] = useState(null);
   const [hoveredIndexBottomCards, setHoveredIndexBottomCards] = useState(null);
 
-  const ITEMS_QUANTITY = 3;
+  const ITEMS_QUANTITY = 2;
 
   const topCards = [
     "Cirurgia Dental",
@@ -194,7 +194,7 @@ const CardCarousel = () => {
         </div>
       </div>
 
-      <span
+      {/* <span
         className="prev-button"
         onClick={prevSlide}
         style={{
@@ -220,7 +220,17 @@ const CardCarousel = () => {
         }}
       >
         <img src={arrowRight} alt="Arrow right" />
-      </span>
+      </span> */}
+
+      <nav className="buttons">
+        <span className="prev-button" onClick={prevSlide}>
+          <img src={arrowLeft} alt="Arrow left" />
+        </span>
+
+        <span className="next-button" onClick={nextSlide}>
+          <img src={arrowRight} alt="Arrow right" />
+        </span>
+      </nav>
     </div>
   );
 };

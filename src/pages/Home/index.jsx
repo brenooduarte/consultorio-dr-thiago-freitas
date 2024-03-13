@@ -13,9 +13,9 @@ const Home = () => {
 
       <ProfileSection />
 
-      {/*<TreatmentsSection />
+      <TreatmentsSection />
 
-      <SpaceSection />
+      {/*<SpaceSection />
 
       <ServiceSection /> */}
     </>
