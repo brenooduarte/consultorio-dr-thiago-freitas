@@ -128,28 +128,35 @@ const CardCarousel = () => {
             .map((card, index) => {
               const arrayIndex = currentIndexTopCards + index;
               return (
-                <div
-                  className={`card ${
-                    hoveredIndexTopCards === index ? "hovered" : ""
-                  }`}
-                  key={index}
-                  onMouseOver={() => handleMouseOverTopCards(index)}
-                  onMouseOut={() => handleMouseOutTopCards()}
-                >
+                <div className="card" key={index}>
                   <img
                     className="card-icon"
                     src={topCardIcon[arrayIndex]}
-                    alt=""
+                    alt={topCards[arrayIndex]}
                   />
                   <span>
                     {hoveredIndexTopCards === index ? (
-                      <div className="card-text">
+                      <div className="card-hovered card-text">
                         <span className="title-hovered">{card}</span>
                         {topCardDescriptions[arrayIndex]}
+                        <span
+                          onClick={() => {
+                            handleMouseOutTopCards();
+                          }}
+                          className="close-button"
+                        >
+                          Fechar
+                        </span>
                       </div>
                     ) : (
-                      card
+                      <span className="card-title">{card}</span>
                     )}
+                    <span
+                      onClick={() => handleMouseOverTopCards(index)}
+                      className="open-button"
+                    >
+                      Detalhes
+                    </span>
                   </span>
                 </div>
               );
@@ -165,62 +172,41 @@ const CardCarousel = () => {
             .map((card, index) => {
               const arrayIndex = currentIndexBottomCards + index;
               return (
-                <div
-                  className={`card ${
-                    hoveredIndexBottomCards === index ? "hovered" : ""
-                  }`}
-                  key={index}
-                  onMouseOver={() => handleMouseOverBottomCards(index)}
-                  onMouseOut={() => handleMouseOutBottomCards()}
-                >
+                <div className="card" key={index}>
                   <img
                     className="card-icon"
                     src={bottomCardIcon[arrayIndex]}
-                    alt=""
+                    alt={bottomCards[arrayIndex]}
                   />
                   <span>
                     {hoveredIndexBottomCards === index ? (
-                      <div className="card-text">
+                      <div className="card-hovered card-text">
                         <span className="title-hovered">{card}</span>
                         {bottomCardDescriptions[arrayIndex]}
+                        <span
+                          onClick={() => {
+                            handleMouseOutBottomCards();
+                          }}
+                          className="close-button"
+                        >
+                          Fechar
+                        </span>
                       </div>
                     ) : (
-                      card
+                      <span className="card-title">{card}</span>
                     )}
+                    <span
+                      onClick={() => handleMouseOverBottomCards(index)}
+                      className="open-button"
+                    >
+                      Detalhes
+                    </span>
                   </span>
                 </div>
               );
             })}
         </div>
       </div>
-
-      {/* <span
-        className="prev-button"
-        onClick={prevSlide}
-        style={{
-          display:
-            canNavigatePrev(currentIndexTopCards) ||
-            canNavigatePrev(currentIndexBottomCards)
-              ? ""
-              : "none",
-        }}
-      >
-        <img src={arrowLeft} alt="Arrow left" />
-      </span>
-
-      <span
-        className="next-button"
-        onClick={nextSlide}
-        style={{
-          display:
-            canNavigateNext(currentIndexTopCards, topCards) ||
-            canNavigateNext(currentIndexBottomCards, bottomCards)
-              ? ""
-              : "none",
-        }}
-      >
-        <img src={arrowRight} alt="Arrow right" />
-      </span> */}
 
       <nav className="buttons">
         <span className="prev-button" onClick={prevSlide}>
