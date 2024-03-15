@@ -172,3 +172,49 @@
     cursor: pointer;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .card-carousel {
+    width: 41rem;
+  }
+
+  .card {
+    width: 19rem;
+    height: 19rem;
+
+    span {
+      .card-title {
+        font-size: 1.9rem;
+        height: 3rem;
+        margin-bottom: 4rem;
+      }
+
+      .close-button {
+        width: 13rem;
+        font-size: 1.5rem;
+      }
+
+      .open-button {
+        padding: 0.4rem;
+        width: 11rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .card-icon {
+    margin-bottom: 11rem;
+    width: 5.5rem;
+  }
+
+  .card-hovered {
+    width: 27rem;
+    height: 27rem;
+    left: 7rem;
+    top: 7rem;
+  }
+
+  .buttons {
+    padding: 2rem 0;
+  }
+}
