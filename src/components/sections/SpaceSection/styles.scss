@@ -3,9 +3,11 @@ $card-size: 23rem;
 .space-section {
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 59rem;
 
   iframe {
+    width: 165.375px;
+    height: 294px;
     border-radius: 1rem;
     border-style: none;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -16,6 +18,8 @@ $card-size: 23rem;
   display: flex;
   align-content: center;
   position: relative;
+  left: 3rem;
+  margin-top: 6rem;
   width: $card-size;
   height: $card-size;
   transform-style: preserve-3d;
@@ -42,7 +46,8 @@ $card-size: 23rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 80%;
+  left: 5.5rem;
+  top: 35rem;
   z-index: 2;
   cursor: pointer;
   user-select: none;
@@ -54,7 +59,6 @@ $card-size: 23rem;
   }
 
   &.right {
-    right: 0;
     transform: translateX(100%) translatey(-50%);
   }
 }
@@ -64,9 +68,25 @@ $card-size: 23rem;
   height: 5rem;
   padding: 0.1rem;
   border-radius: 50%;
-  margin: auto 11rem;
+  background-color: rgb(255, 255, 255, 0.5);
 }
 
-.arrow:hover {
-  background-color: #bedffd;
+@media screen and (min-width: 1023px) {
+  .space-section {
+    height: 70rem;
+
+    iframe {
+      width: 220.5px;
+      height: 392px;
+    }
+  }
+
+  .carousel {
+    left: 1rem;
+  }
+
+  .nav {
+    left: 8.5rem;
+    top: 45rem;
+  }
 }

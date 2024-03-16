@@ -11,12 +11,6 @@ const Carousel = ({ children }) => {
 
   return (
     <div className="carousel">
-      {active > 0 && (
-        <button className="nav left" onClick={() => setActive((i) => i - 1)}>
-          <img className="arrow" src={arrowLeft} alt="Arrow left" />
-        </button>
-      )}
-
       {Children.map(children, (child, i) => (
         <div
           className="carousel-container"
@@ -33,6 +27,12 @@ const Carousel = ({ children }) => {
           {child}
         </div>
       ))}
+
+      {active > 0 && (
+        <button className="nav left" onClick={() => setActive((i) => i - 1)}>
+          <img className="arrow" src={arrowLeft} alt="Arrow left" />
+        </button>
+      )}
 
       {active < count - 1 && (
         <button className="nav right" onClick={() => setActive((i) => i + 1)}>
