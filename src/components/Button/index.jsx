@@ -1,7 +1,11 @@
 import "./styles.scss";
 
-const Button = ({ text, className }) => {
-  return <button className={className}>{text}</button>;
+const Button = ({ link, text, className }) => {
+  return (
+    <button onClick={() => window.open(link, "_blank")} className={className}>
+      {text}
+    </button>
+  );
 };
 
 export default Button;
