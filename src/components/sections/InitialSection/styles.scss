@@ -109,7 +109,7 @@
     justify-content: end;
     align-items: flex-start;
     width: 36%;
-    height: 100vh;
+    height: 65rem;
 
     .header {
       flex-direction: row;
@@ -161,7 +161,7 @@
     }
 
     picture .tooth {
-      width: 35%;
+      width: 36rem;
       margin: 0;
       padding-top: 6rem;
       margin-bottom: 5rem;
@@ -170,9 +170,9 @@
 
     .thiago-image {
       position: absolute;
-      width: 40%;
+      width: 38rem;
       margin: 0;
-      right: 17%;
+      right: 20%;
     }
   }
 
@@ -195,6 +195,30 @@
         font-size: 2rem;
         text-align: start;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1183px) {
+  .rectangle {
+    .thiago-image {
+      right: 23%;
+    }
+  }
+}
+
+@media screen and (min-width: 1535px) {
+  .rectangle {
+    .thiago-image {
+      right: 26%;
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .rectangle {
+    .thiago-image {
+      right: 29%;
     }
   }
 }
