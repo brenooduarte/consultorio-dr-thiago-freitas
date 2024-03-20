@@ -26,7 +26,7 @@ const InitialSection = () => {
             />
           </picture>
 
-          <a className="telephone-number" href="">
+          <a className="telephone-number" href="tel:83981794041">
             (83) 9 8179-4041
           </a>
           <a className="link" href="#profile">
