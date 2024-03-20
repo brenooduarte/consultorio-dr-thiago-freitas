@@ -3,7 +3,8 @@ $card-size: 23rem;
 .space-section {
   flex-direction: column;
   align-items: center;
-  height: 59rem;
+  height: 100%;
+  margin: 10rem 0;
 
   iframe {
     width: 165.375px;
@@ -21,7 +22,7 @@ $card-size: 23rem;
   left: 3rem;
   margin-top: 6rem;
   width: $card-size;
-  height: $card-size;
+  height: 38rem;
   transform-style: preserve-3d;
 }
 
@@ -73,8 +74,6 @@ $card-size: 23rem;
 
 @media screen and (min-width: 1023px) {
   .space-section {
-    height: 70rem;
-
     iframe {
       width: 220.5px;
       height: 392px;
@@ -82,6 +81,7 @@ $card-size: 23rem;
   }
 
   .carousel {
+    height: 48rem;
     left: 1rem;
   }
 

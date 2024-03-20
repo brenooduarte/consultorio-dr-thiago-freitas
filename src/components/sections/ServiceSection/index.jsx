@@ -7,7 +7,7 @@ const ServiceSection = () => {
       <h2 className="title-section">Atendimento</h2>
 
       <div className="service-container">
-        <div>
+        <div className="">
           <h2>Aberto</h2>
           <div className="service-card open-card">
             <p>
@@ -20,7 +20,7 @@ const ServiceSection = () => {
           </div>
         </div>
 
-        <div>
+        <div className="">
           <h2>Localização</h2>
           <div className="service-card location-card">
             <p>

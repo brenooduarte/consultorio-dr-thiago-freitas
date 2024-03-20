@@ -17,7 +17,7 @@ const Home = () => {
 
       <SpaceSection />
 
-      {/* <ServiceSection /> */}
+      <ServiceSection />
     </>
   );
 };
