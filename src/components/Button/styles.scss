@@ -1,6 +1,7 @@
 @import "/src/global.scss";
 
 .button {
+  cursor: pointer;
   color: $color-white;
   font-size: 1.7rem;
   border-radius: 21px;
