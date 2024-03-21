@@ -22,6 +22,8 @@ const CardCarousel = () => {
   const [hoveredIndexTopCards, setHoveredIndexTopCards] = useState(null);
   const [hoveredIndexBottomCards, setHoveredIndexBottomCards] = useState(null);
 
+  const [isVisible, setIsVisible] = useState(false);
+
   const ITEMS_QUANTITY = 2;
 
   const topCards = [
@@ -78,11 +80,6 @@ const CardCarousel = () => {
     healthPromotion,
   ];
 
-  // const canNavigateNext = (currentIndex, cards) =>
-  //   currentIndex + 3 < cards.length;
-
-  // const canNavigatePrev = (currentIndex) => currentIndex > 0;
-
   const canNavigateNext = (currentIndex, cards) =>
     currentIndex + ITEMS_QUANTITY < cards.length;
 
@@ -109,19 +106,27 @@ const CardCarousel = () => {
   };
 
   const handleMouseOverTopCards = (index) => {
+    setIsVisible(false);
     setHoveredIndexTopCards(index);
   };
 
   const handleMouseOutTopCards = () => {
-    setHoveredIndexTopCards(null);
+    setIsVisible(true);
+    setTimeout(() => {
+      setHoveredIndexTopCards(null);
+    }, 300);
   };
 
   const handleMouseOverBottomCards = (index) => {
+    setIsVisible(false);
     setHoveredIndexBottomCards(index);
   };
 
   const handleMouseOutBottomCards = () => {
-    setHoveredIndexBottomCards(null);
+    setIsVisible(true);
+    setTimeout(() => {
+      setHoveredIndexBottomCards(null);
+    }, 300);
   };
 
   return (
@@ -141,7 +146,11 @@ const CardCarousel = () => {
                   />
                   <span>
                     {hoveredIndexTopCards === index ? (
-                      <div className="card-hovered card-text">
+                      <div
+                        className={`card-hovered card-text ${
+                          isVisible == 0 ? "fade-in" : "fade-out"
+                        }`}
+                      >
                         <span className="title-hovered">{card}</span>
                         {topCardDescriptions[arrayIndex]}
                         <span
@@ -185,7 +194,11 @@ const CardCarousel = () => {
                   />
                   <span>
                     {hoveredIndexBottomCards === index ? (
-                      <div className="card-hovered card-text">
+                      <div
+                        className={`card-hovered card-text ${
+                          isVisible == 0 ? "fade-in" : "fade-out"
+                        }`}
+                      >
                         <span className="title-hovered">{card}</span>
                         {bottomCardDescriptions[arrayIndex]}
                         <span
