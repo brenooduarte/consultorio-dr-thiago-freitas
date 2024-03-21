@@ -36,7 +36,7 @@ const InitialSection = () => {
             Tratamentos
           </a>
           <a className="link" href="#space">
-            Espaço
+            Consultório
           </a>
           <a className="link" href="#service">
             Atendimento

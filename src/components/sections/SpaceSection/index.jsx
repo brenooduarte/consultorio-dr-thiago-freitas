@@ -43,12 +43,12 @@ const SpaceSection = () => {
 
   return (
     <section id="space" className="space-section">
-      <h2 className="title-section">Espaço</h2>
+      <h2 className="title-section">Consultório</h2>
       <h3
         id="change-point-for-white-background"
         className="treatments-subtitle"
       >
-        Conheça nosso Consultório
+        Conheça nosso Espaço
       </h3>
       <Carousel>
         {videos.map((link, i) => (
@@ -60,18 +60,6 @@ const SpaceSection = () => {
           ></iframe>
         ))}
       </Carousel>
-      {/* <Carousel>
-        {videos.map((link, i) => (
-          <iframe
-            key={i}
-            width="220.5"
-            height="392"
-            src={link}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-        ))}
-      </Carousel> */}
     </section>
   );
 };
