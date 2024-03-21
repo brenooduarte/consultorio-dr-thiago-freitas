@@ -228,17 +228,83 @@
 }
 
 @media screen and (min-width: 1535px) {
+  .info-container {
+    .info-items {
+      h1 {
+        font-size: 5rem;
+      }
+
+      p {
+        font-size: 3rem;
+        text-align: start;
+      }
+    }
+  }
+
   .rectangle {
+    height: 108rem;
+
+    .header {
+      margin-top: 5rem;
+
+      a {
+        font-size: 2.3rem;
+      }
+
+      .telephone-image {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      .telephone-number {
+        font-size: 2.3rem;
+      }
+    }
+
+    picture .tooth {
+      width: 55rem;
+      padding-top: 14rem;
+    }
+
     .thiago-image {
-      right: 26%;
+      width: 55rem;
+      right: 21%;
     }
   }
 }
 
 @media screen and (min-width: 2000px) {
+  .info-container {
+    .info-items {
+      padding-left: 20rem;
+      h1 {
+        font-size: 5rem;
+      }
+
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
+
   .rectangle {
-    .thiago-image {
-      right: 29%;
+    right: 25%;
+
+    .header {
+      padding-left: 20rem;
+
+      a {
+        font-size: 2.7rem;
+      }
+
+      .telephone-image {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      .telephone-number {
+        font-size: 2.7rem;
+      }
     }
   }
 }
