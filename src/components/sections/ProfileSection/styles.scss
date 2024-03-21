@@ -77,3 +77,35 @@
     }
   }
 }
+
+@media screen and (min-width: 1535px) {
+  .profile-section {
+    height: 100vh;
+    flex-direction: row;
+    margin: 0 6rem;
+
+    #info-container {
+      padding: 6rem;
+    }
+  }
+
+  .profile-title {
+    font-size: 3.3rem;
+    padding: 1rem 1rem 5rem 1rem;
+  }
+
+  .half {
+    h3 {
+      font-size: 2.6rem;
+    }
+
+    p {
+      font-size: 2.5rem;
+      margin: 2rem 0;
+    }
+
+    .thiago-patient-image {
+      width: 55rem;
+    }
+  }
+}
