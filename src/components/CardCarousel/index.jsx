@@ -114,6 +114,7 @@ const CardCarousel = () => {
     setIsVisible(true);
     setTimeout(() => {
       setHoveredIndexTopCards(null);
+      setHoveredIndexBottomCards(null);
     }, 300);
   };
 
@@ -126,6 +127,7 @@ const CardCarousel = () => {
     setIsVisible(true);
     setTimeout(() => {
       setHoveredIndexBottomCards(null);
+      setHoveredIndexTopCards(null);
     }, 300);
   };
 
