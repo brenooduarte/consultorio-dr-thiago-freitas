@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.scss";
 import arrowLeft from "../../assets/arrow-left.svg";
 import arrowRight from "../../assets/arrow-right.svg";
@@ -129,8 +129,16 @@ const CardCarousel = () => {
     }, 300);
   };
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
-    <div className="container-card-carousel">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      className="container-card-carousel"
+    >
       <div className="card-carousel">
         <div className="cards-container top-cards">
           {topCards
