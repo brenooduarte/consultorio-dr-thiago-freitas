@@ -78,8 +78,13 @@ const CardCarousel = () => {
     healthPromotion,
   ];
 
+  // const canNavigateNext = (currentIndex, cards) =>
+  //   currentIndex + 3 < cards.length;
+
+  // const canNavigatePrev = (currentIndex) => currentIndex > 0;
+
   const canNavigateNext = (currentIndex, cards) =>
-    currentIndex + 3 < cards.length;
+    currentIndex + ITEMS_QUANTITY < cards.length;
 
   const canNavigatePrev = (currentIndex) => currentIndex > 0;
 
@@ -209,11 +214,27 @@ const CardCarousel = () => {
       </div>
 
       <nav className="buttons">
-        <span className="prev-button" onClick={prevSlide}>
+        <span
+          className={`prev-button ${
+            canNavigatePrev(currentIndexTopCards) ||
+            canNavigatePrev(currentIndexBottomCards)
+              ? ""
+              : "hidden"
+          }`}
+          onClick={prevSlide}
+        >
           <img src={arrowLeft} alt="Arrow left" />
         </span>
 
-        <span className="next-button" onClick={nextSlide}>
+        <span
+          className={`next-button ${
+            canNavigateNext(currentIndexTopCards, topCards) ||
+            canNavigateNext(currentIndexBottomCards, bottomCards)
+              ? ""
+              : "hidden"
+          }`}
+          onClick={nextSlide}
+        >
           <img src={arrowRight} alt="Arrow right" />
         </span>
       </nav>

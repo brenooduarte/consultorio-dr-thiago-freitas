@@ -48,7 +48,7 @@ const SpaceSection = () => {
         id="change-point-for-white-background"
         className="treatments-subtitle"
       >
-        Conheça nosso Espaço
+        Conheça nosso espaço
       </h3>
       <Carousel>
         {videos.map((link, i) => (
