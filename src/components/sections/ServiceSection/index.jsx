@@ -31,7 +31,7 @@ const ServiceSection = () => {
         </div>
       </div>
       <Button
-        link="https://wa.me/558381794041?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20no%20consultório%20do%20Dr.%20Thiago%20Freitas.%20%0AQuais%20horários%20estão%20disponíveis%20para%20esta%20semana%3F"
+        link="https://wa.me/558381794041?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta%20no%20consultório%20do%20Dr.%20Thiago%20Freitas.%20%0A%0AQuais%20horários%20estão%20disponíveis%20para%20esta%20semana%3F"
         text="Agendar consulta"
         className={"button"}
       />
