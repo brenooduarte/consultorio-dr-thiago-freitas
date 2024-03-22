@@ -32,14 +32,11 @@
   text-align: start;
   flex-direction: column;
 
-  // font-size: 1.9rem;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
   justify-content: center;
 
-  // width: 37rem;
-  // height: 19rem;
   width: 28rem;
   height: 15rem;
   background-color: #ffffff;
@@ -73,5 +70,11 @@
   .location-card {
     height: 10rem;
     width: 27rem;
+  }
+}
+
+@media screen and (min-width: 1535px) {
+  .service-section {
+    margin: 15rem 0;
   }
 }

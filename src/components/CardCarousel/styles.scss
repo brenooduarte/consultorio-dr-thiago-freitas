@@ -248,3 +248,68 @@
     padding: 2rem 0;
   }
 }
+
+@media screen and (min-width: 1535px) {
+  .card-carousel {
+    width: 53.5rem;
+  }
+
+  .card {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 35px;
+    padding: 0 1rem;
+
+    span {
+      .card-title {
+        font-size: 2.5rem;
+        height: 3rem;
+        margin-bottom: 5rem;
+      }
+
+      .close-button {
+        width: 16rem;
+        font-size: 2.1rem;
+        padding: 0.6rem 0;
+      }
+
+      .open-button {
+        padding: 0.4rem;
+        width: 15rem;
+        font-size: 1.9rem;
+        border-radius: 24px 24px 0 0;
+      }
+    }
+  }
+
+  .card-icon {
+    margin-bottom: 13.5rem;
+    width: 8rem;
+  }
+
+  .card-hovered {
+    width: 37rem;
+    height: 37rem;
+    left: 8.5rem;
+    top: 8.5rem;
+  }
+
+  .title-hovered {
+    font-size: 3rem;
+  }
+
+  .card-text {
+    font-size: 2.1rem;
+  }
+
+  .buttons {
+    padding-top: 4rem;
+    gap: 7rem;
+
+    .prev-button,
+    .next-button {
+      width: 85px;
+      height: 85px;
+    }
+  }
+}

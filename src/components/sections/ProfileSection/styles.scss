@@ -50,9 +50,9 @@
 
 @media screen and (min-width: 1023px) {
   .profile-section {
-    height: 100vh;
+    height: 100%;
     flex-direction: row;
-    margin: 0 6rem;
+    margin: 10rem 6rem;
 
     #info-container {
       padding: 6rem;
@@ -80,13 +80,7 @@
 
 @media screen and (min-width: 1535px) {
   .profile-section {
-    height: 100vh;
-    flex-direction: row;
-    margin: 0 6rem;
-
-    #info-container {
-      padding: 6rem;
-    }
+    margin: 15rem 6rem;
   }
 
   .profile-title {
