@@ -79,6 +79,7 @@
   }
 
   .carousel {
+    left: -5rem;
     height: 48rem;
     width: 23rem;
   }
@@ -86,5 +87,32 @@
   .nav {
     left: 8.5rem;
     top: 45rem;
+  }
+}
+
+@media screen and (min-width: 1535px) {
+  .space-section {
+    margin: 15rem 0;
+
+    iframe {
+      border-radius: 2rem;
+      width: 330.75px;
+      height: 588px;
+    }
+  }
+
+  .carousel {
+    height: 74rem;
+    width: 23rem;
+  }
+
+  .nav {
+    left: 12.5rem;
+    top: 69rem;
+  }
+
+  .arrow {
+    width: 8.5rem;
+    height: 8.5rem;
   }
 }
