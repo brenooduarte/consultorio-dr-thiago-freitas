@@ -1,5 +1,7 @@
 import "./styles.scss";
 import Button from "../../Button/index.jsx";
+import locationIcon from "../../../assets/location.png";
+import scheduleIcon from "../../../assets/schedule.png";
 
 const ServiceSection = () => {
   return (
@@ -7,8 +9,11 @@ const ServiceSection = () => {
       <h2 className="title-section">Atendimento</h2>
 
       <div className="service-container">
-        <div className="">
-          <h2>Aberto</h2>
+        <div>
+          <h2>
+            <img src={scheduleIcon} alt="Ícone de agenda" />
+            Agenda
+          </h2>
           <div className="service-card open-card">
             <p>
               <strong>Segunda</strong> à <strong>Sexta</strong> das
@@ -20,8 +25,11 @@ const ServiceSection = () => {
           </div>
         </div>
 
-        <div className="">
-          <h2>Localização</h2>
+        <div>
+          <h2>
+            <img src={locationIcon} alt="Ícone de localização" />
+            Localização
+          </h2>
           <div className="service-card location-card">
             <p>
               Rua João Firmino, 472. <br />
