@@ -2,6 +2,7 @@ import "./styles.scss";
 import Button from "../../Button/index.jsx";
 import locationIcon from "../../../assets/location.png";
 import scheduleIcon from "../../../assets/schedule.png";
+import clockIcon from "../../../assets/clock.png";
 
 const ServiceSection = () => {
   return (
@@ -11,13 +12,29 @@ const ServiceSection = () => {
       <div className="service-container">
         <div>
           <h2>
+            <img src={clockIcon} alt="Ícone de relógio" />
+            Horário Especial
+          </h2>
+          <div className="service-card special-hours-card">
+            <p>
+              <strong>28.03 Quinta-feira</strong> das
+              <span> 8h às 11h30</span> e das <span>13h30 às 17h30</span> <br />
+              <strong>29.03 Sexta-feira</strong> <span id="close">Fechado</span>
+              <br />
+              <strong>30.03 Sábado</strong> <span>8h às 11h30</span>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h2>
             <img src={scheduleIcon} alt="Ícone de agenda" />
             Agenda
           </h2>
           <div className="service-card open-card">
             <p>
               <strong>Segunda</strong> à <strong>Sexta</strong> das
-              <span> 8h às 11h30</span> e das <span>14h às 17h30</span> <br />
+              <span> 8h às 11h30</span> e das <span>13h30 às 17h30</span> <br />
               <strong>Sábado</strong> das <span>8h às 11h30</span> e com
               agendamento <br />
               <strong>Domingo</strong> com agendamento
