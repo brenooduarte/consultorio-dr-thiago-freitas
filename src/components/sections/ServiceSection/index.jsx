@@ -17,11 +17,13 @@ const ServiceSection = () => {
           </h2>
           <div className="service-card special-hours-card">
             <p>
-              <strong>28.03 Quinta-feira</strong> das
-              <span> 8h às 11h30</span> e das <span>13h30 às 17h30</span> <br />
-              <strong>29.03 Sexta-feira</strong> <span id="close">Fechado</span>
+              <strong>01.04 Segunda-feira</strong>{" "}
+              <span id="close">Fechado</span> <br />
+              <strong>02.04 Terça-feira</strong> das <span>8h às 11h30</span> e
+              das <span>13h30 às 17h</span>
               <br />
-              <strong>30.03 Sábado</strong> <span>8h às 11h30</span>
+              <strong>03.04 Quarta-feira</strong> das <span>8h às 11h30</span> e
+              das <span>13h30 às 17h</span>
             </p>
           </div>
         </div>
