@@ -10,7 +10,7 @@ const ServiceSection = () => {
       <h2 className="title-section">Atendimento</h2>
 
       <div className="service-container">
-        <div>
+        {/* <div>
           <h2>
             <img src={clockIcon} alt="Ícone de relógio" />
             Horário Especial
@@ -26,7 +26,7 @@ const ServiceSection = () => {
               das <span>13h30 às 17h</span>
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div>
           <h2>
