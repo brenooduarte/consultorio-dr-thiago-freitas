@@ -32,4 +32,6 @@ $ npm run dev
 
 # Acesse o Site
 
-- [](<[https://www.figma.com/file/uoSC3btHL7jC6gndXhodjn/Consult%C3%B3rio-Dr-Thiago-Freitas?type=design&node-id=23%3A65&mode=design&t=tX7dkJxtFBOgpaFk-1](https://thiagofreitasodonto.com.br/)>)
+- <a href="https://thiagofreitasodonto.com.br" target="_blank">thiagofreitasodonto.com.br</a>
+
+<img width="400" src="src/assets/to-readme/site-consultorio.gif">
