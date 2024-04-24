@@ -27,6 +27,6 @@ $ npm run dev
 
 - Home: [http://localhost:5173/]()
 
-# Acessar Protótipo
+# Acesse o Site
 
-- [Figma](https://www.figma.com/file/uoSC3btHL7jC6gndXhodjn/Consult%C3%B3rio-Dr-Thiago-Freitas?type=design&node-id=23%3A65&mode=design&t=tX7dkJxtFBOgpaFk-1)
+- []([https://www.figma.com/file/uoSC3btHL7jC6gndXhodjn/Consult%C3%B3rio-Dr-Thiago-Freitas?type=design&node-id=23%3A65&mode=design&t=tX7dkJxtFBOgpaFk-1](https://thiagofreitasodonto.com.br/))
