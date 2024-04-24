@@ -34,4 +34,4 @@ $ npm run dev
 
 - <a href="https://thiagofreitasodonto.com.br" target="_blank">thiagofreitasodonto.com.br</a>
 
-<img width="400" src="src/assets/to-readme/site-consultorio.gif">
+<img width="720" src="src/assets/to-readme/site-consultorio.gif">
