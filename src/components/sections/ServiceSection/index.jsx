@@ -35,11 +35,15 @@ const ServiceSection = () => {
           </h2>
           <div className="service-card open-card">
             <p>
-              <strong>Segunda</strong> à <strong>Sexta</strong> das
-              <span> 8h às 11h30</span> e das <span>13h30 às 17h30</span> <br />
-              <strong>Sábado</strong> das <span>8h às 11h30</span> e com
-              agendamento <br />
-              <strong>Domingo</strong> com agendamento
+              <strong>Segunda</strong> e <strong>Quarta</strong> das
+              <span> 18h às 21h</span> <br />
+              <strong>Terça</strong> das <span> 8h às 12h</span> e das
+              <span> 14h às 17h</span> ({" "}
+              <span className="parenthesis">A noite agendado</span> ) <br />
+              <strong>Quinta</strong> e <strong>Sexta</strong> das
+              <span> 14h às 18h</span> ({" "}
+              <span className="parenthesis">A noite agendado</span> ) <br />
+              <strong>Sábado</strong> das <span>8h às 12h</span>
             </p>
           </div>
         </div>
