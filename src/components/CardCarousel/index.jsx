@@ -21,10 +21,11 @@ const CardCarousel = () => {
   const [currentIndexBottomCards, setCurrentIndexBottomCards] = useState(0);
   const [hoveredIndexTopCards, setHoveredIndexTopCards] = useState(null);
   const [hoveredIndexBottomCards, setHoveredIndexBottomCards] = useState(null);
-
   const [isVisible, setIsVisible] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [itemsQuantity, setItemsQuantity] = useState(2);
 
-  const ITEMS_QUANTITY = 2;
+  const WIDTH_DESKTOP = 900;
 
   const topCards = [
     "Cirurgia Dental",
@@ -81,27 +82,27 @@ const CardCarousel = () => {
   ];
 
   const canNavigateNext = (currentIndex, cards) =>
-    currentIndex + ITEMS_QUANTITY < cards.length;
+    currentIndex + itemsQuantity < cards.length;
 
   const canNavigatePrev = (currentIndex) => currentIndex > 0;
 
   const nextSlide = () => {
     if (canNavigateNext(currentIndexTopCards, topCards)) {
-      setCurrentIndexTopCards((prevIndex) => prevIndex + ITEMS_QUANTITY);
+      setCurrentIndexTopCards((prevIndex) => prevIndex + itemsQuantity);
     }
 
     if (canNavigateNext(currentIndexBottomCards, bottomCards)) {
-      setCurrentIndexBottomCards((prevIndex) => prevIndex + ITEMS_QUANTITY);
+      setCurrentIndexBottomCards((prevIndex) => prevIndex + itemsQuantity);
     }
   };
 
   const prevSlide = () => {
     if (canNavigatePrev(currentIndexTopCards)) {
-      setCurrentIndexTopCards((prevIndex) => prevIndex - ITEMS_QUANTITY);
+      setCurrentIndexTopCards((prevIndex) => prevIndex - itemsQuantity);
     }
 
     if (canNavigatePrev(currentIndexBottomCards)) {
-      setCurrentIndexBottomCards((prevIndex) => prevIndex - ITEMS_QUANTITY);
+      setCurrentIndexBottomCards((prevIndex) => prevIndex - itemsQuantity);
     }
   };
 
@@ -133,7 +134,14 @@ const CardCarousel = () => {
 
   useEffect(() => {
     AOS.init();
-  });
+
+    if (window.innerWidth >= WIDTH_DESKTOP) {
+      setIsDesktop(true);
+      setItemsQuantity(3);
+    } else {
+      setIsDesktop(false);
+    }
+  }, []);
 
   return (
     <div
@@ -142,10 +150,14 @@ const CardCarousel = () => {
       data-aos-duration="1000"
       className="container-card-carousel"
     >
-      <div className="card-carousel">
+      <div
+        className={`card-carousel ${
+          isDesktop ? "resize-desktop" : "resize-mobile"
+        }`}
+      >
         <div className="cards-container top-cards">
           {topCards
-            .slice(currentIndexTopCards, currentIndexTopCards + ITEMS_QUANTITY)
+            .slice(currentIndexTopCards, currentIndexTopCards + itemsQuantity)
             .map((card, index) => {
               const arrayIndex = currentIndexTopCards + index;
               return (
@@ -192,7 +204,7 @@ const CardCarousel = () => {
           {bottomCards
             .slice(
               currentIndexBottomCards,
-              currentIndexBottomCards + ITEMS_QUANTITY
+              currentIndexBottomCards + itemsQuantity
             )
             .map((card, index) => {
               const arrayIndex = currentIndexBottomCards + index;

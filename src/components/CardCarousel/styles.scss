@@ -6,8 +6,15 @@
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
-  width: 30rem;
   margin: auto;
+}
+
+.resize-desktop {
+  width: 62rem;
+}
+
+.resize-mobile {
+  width: 30rem;
 }
 
 .top-cards,
@@ -204,7 +211,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .card-carousel {
+  .resize-mobile {
     width: 41rem;
   }
 
@@ -250,8 +257,8 @@
 }
 
 @media screen and (min-width: 1535px) {
-  .card-carousel {
-    width: 53.5rem;
+  .resize-desktop {
+    width: 80.5rem;
   }
 
   .card {
