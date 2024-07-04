@@ -19,8 +19,7 @@ import healthPromotion from "../../assets/card-icons/health-promotion.png";
 const CardCarousel = () => {
   const [currentIndexTopCards, setCurrentIndexTopCards] = useState(0);
   const [currentIndexBottomCards, setCurrentIndexBottomCards] = useState(0);
-  const [hoveredIndexTopCards, setHoveredIndexTopCards] = useState(null);
-  const [hoveredIndexBottomCards, setHoveredIndexBottomCards] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [itemsQuantity, setItemsQuantity] = useState(2);
@@ -106,29 +105,15 @@ const CardCarousel = () => {
     }
   };
 
-  const handleMouseOverTopCards = (index) => {
+  const handleMouseOver = (index, isTopCard) => {
     setIsVisible(false);
-    setHoveredIndexTopCards(index);
+    setHoveredIndex({ index, isTopCard });
   };
 
-  const handleMouseOutTopCards = () => {
+  const handleMouseOut = () => {
     setIsVisible(true);
     setTimeout(() => {
-      setHoveredIndexTopCards(null);
-      setHoveredIndexBottomCards(null);
-    }, 300);
-  };
-
-  const handleMouseOverBottomCards = (index) => {
-    setIsVisible(false);
-    setHoveredIndexBottomCards(index);
-  };
-
-  const handleMouseOutBottomCards = () => {
-    setIsVisible(true);
-    setTimeout(() => {
-      setHoveredIndexBottomCards(null);
-      setHoveredIndexTopCards(null);
+      setHoveredIndex(null);
     }, 300);
   };
 
@@ -168,28 +153,29 @@ const CardCarousel = () => {
                     alt={topCards[arrayIndex]}
                   />
                   <span>
-                    {hoveredIndexTopCards === index ? (
-                      <div
-                        className={`card-hovered card-text ${
-                          isVisible == 0 ? "fade-in" : "fade-out"
-                        }`}
-                      >
-                        <span className="title-hovered">{card}</span>
-                        {topCardDescriptions[arrayIndex]}
-                        <span
-                          onClick={() => {
-                            handleMouseOutTopCards();
-                          }}
-                          className="close-button"
+                    <span className="card-title">{card}</span>
+                    {hoveredIndex &&
+                      hoveredIndex.index === index &&
+                      hoveredIndex.isTopCard && (
+                        <div
+                          className={`card-hovered card-text ${
+                            isVisible == 0 ? "fade-in" : "fade-out"
+                          }`}
                         >
-                          Fechar
-                        </span>
-                      </div>
-                    ) : (
-                      <span className="card-title">{card}</span>
-                    )}
+                          <span className="title-hovered">{card}</span>
+                          {topCardDescriptions[arrayIndex]}
+                          <span
+                            onClick={() => {
+                              handleMouseOut();
+                            }}
+                            className="close-button"
+                          >
+                            Fechar
+                          </span>
+                        </div>
+                      )}
                     <span
-                      onClick={() => handleMouseOverTopCards(index)}
+                      onClick={() => handleMouseOver(index, true)}
                       className="open-button"
                     >
                       Detalhes
@@ -216,28 +202,29 @@ const CardCarousel = () => {
                     alt={bottomCards[arrayIndex]}
                   />
                   <span>
-                    {hoveredIndexBottomCards === index ? (
-                      <div
-                        className={`card-hovered card-text ${
-                          isVisible == 0 ? "fade-in" : "fade-out"
-                        }`}
-                      >
-                        <span className="title-hovered">{card}</span>
-                        {bottomCardDescriptions[arrayIndex]}
-                        <span
-                          onClick={() => {
-                            handleMouseOutBottomCards();
-                          }}
-                          className="close-button"
+                    <span className="card-title">{card}</span>
+                    {hoveredIndex &&
+                      hoveredIndex.index === index &&
+                      !hoveredIndex.isTopCard && (
+                        <div
+                          className={`card-hovered card-text ${
+                            isVisible == 0 ? "fade-in" : "fade-out"
+                          }`}
                         >
-                          Fechar
-                        </span>
-                      </div>
-                    ) : (
-                      <span className="card-title">{card}</span>
-                    )}
+                          <span className="title-hovered">{card}</span>
+                          {bottomCardDescriptions[arrayIndex]}
+                          <span
+                            onClick={() => {
+                              handleMouseOut();
+                            }}
+                            className="close-button"
+                          >
+                            Fechar
+                          </span>
+                        </div>
+                      )}
                     <span
-                      onClick={() => handleMouseOverBottomCards(index)}
+                      onClick={() => handleMouseOver(index, false)}
                       className="open-button"
                     >
                       Detalhes
